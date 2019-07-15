@@ -8,7 +8,7 @@ class Backdrop(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
 
-        self.image = pygame.image.load("game_background.jpg")
+        self.image = pygame.image.load("assets/backgrounds/start_page.jpg")
 
         self.rect = self.image.get_rect()
         self.rect.w
@@ -18,76 +18,76 @@ class bright_red(pygame.sprite.Sprite):
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("red_bright.png")
+        self.image = pygame.image.load("assets/images/red_bright.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 405
-        self.rect.y = 150
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 404
+        self.rect.y = 146
 
 class dull_red(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("red_dull.png")
+        self.image = pygame.image.load("assets/images/red_dull.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 405
-        self.rect.y = 150
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 404
+        self.rect.y = 146
 
 class bright_green(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("green_bright.png")
+        self.image = pygame.image.load("assets/images/green_bright.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 217
-        self.rect.y = 150
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 215
+        self.rect.y = 146
 
 class dull_green(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("green_dull.png")
+        self.image = pygame.image.load("assets/images/green_dull.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 217
-        self.rect.y = 150
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 215
+        self.rect.y = 146
 
 class bright_blue(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("blue_bright.png")
+        self.image = pygame.image.load("assets/images/blue_bright.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 217
-        self.rect.y = 337
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 215
+        self.rect.y = 335
 
 class dull_blue(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("blue_dull.png")
+        self.image = pygame.image.load("assets/images/blue_dull.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 217
-        self.rect.y = 337
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 215
+        self.rect.y = 335
 
 class bright_yellow(pygame.sprite.Sprite):
     """The game's character"""
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("yellow_bright.png")
+        self.image = pygame.image.load("assets/images/yellow_bright.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 405
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 404
         self.rect.y = 335
 
 class dull_yellow(pygame.sprite.Sprite):
@@ -95,10 +95,10 @@ class dull_yellow(pygame.sprite.Sprite):
     def __init__(self, input_dict):
         super().__init__()
         self.input = input_dict
-        self.image = pygame.image.load("yellow_dull.png")
+        self.image = pygame.image.load("assets/images/yellow_dull.png")
         self.rect = self.image.get_rect()
-        self.image = pygame.transform.scale(self.image, (183, 183))
-        self.rect.x = 405
+        self.image = pygame.transform.scale(self.image, (189, 189))
+        self.rect.x = 404
         self.rect.y = 335
 
     def update(self):
