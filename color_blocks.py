@@ -126,27 +126,7 @@ class Game():
         self.backdrop = Backdrop()
         self.sprites = pygame.sprite.Group()
         self.sprites.add(self.backdrop)
-
-        # Show Dull Red
-        
-        self.dull_red = dull_red(self.input)
-        self.sprites.add(self.dull_red)
-
-        # Show Dull Green
-        
-        self.dull_green = dull_green(self.input)
-        self.sprites.add(self.dull_green)
-
-        # Show Dull Blue
-        
-        self.dull_blue = dull_blue(self.input)
-        self.sprites.add(self.dull_blue)
-
-        # Show Dull Yellow
-        
-        self.dull_yellow = dull_yellow(self.input)
-        self.sprites.add(self.dull_yellow)
-
+        self.self_squares = SelfSquares(self.sprites, self.input)
 
     def update(self):
         """Updates the game"""
@@ -184,6 +164,34 @@ class Game():
                 elif event.key == pygame.K_LEFT:
                     self.input["left"] = False
 
+class SelfSquares():
+    def __init__(self,sprites, input_dict):
+        self.sprites = sprites
+        self.input = input_dict
+
+        # Show Dull Red
+        
+        self.dull_red = dull_red(self.input)
+        self.sprites.add(self.dull_red)
+
+        # Show Dull Green
+
+        self.dull_green = dull_green(self.input)
+        self.sprites.add(self.dull_green)
+
+        # Show Dull Blue
+
+        self.dull_blue = dull_blue(self.input)
+        self.sprites.add(self.dull_blue)
+
+        # Show Dull Yellow
+
+        self.dull_yellow = dull_yellow(self.input)
+        self.sprites.add(self.dull_yellow)
+
+
+
+    
 def main():
     game = Game()
 
